@@ -18,15 +18,15 @@ public function onJoin(PlayerJoinEvent $event)
   $player = $event->getPlayer();
     if($player->isOp()){
       $event->setJoinMessage(TextFormat::RED . $player->getName() . TextFormat::YELLOW."al Op d5l");
- else{
+    } else {
   $event->setJoinMessage(TextFormat::GREEN . $player->getName() . TextFormat::YELLOW . "al Op d5l");
   }
  }
 public function onQuit(PlayerQuitEvent $event){
- $player = $sender->getPlayer();
+ $player = $event->getPlayer();
    if($player->isOp()){
      $event->setQuitMessage(TextFormat::RED . $player->getName() TextFormat::AQUA . "al Op 6l3");
-  } else{
+  } else {
  $event->setQuitMessage(TextFormat::RED . $player->getName() . TextFormat::AQUA . "al Player 6l3");
   }
  }
