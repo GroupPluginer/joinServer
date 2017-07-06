@@ -17,7 +17,7 @@ public function onEnable(){
 public function onJoin(PlayerJoinEvent $event){
   $player = $event->getPlayer();
     if($player->isOp()){
-      $event->setJoinMessage(TextFormat::RED . $player->getName() . TextFormat::YELLOW."OP d5l");
+      $event->setJoinMessage(TextFormat::RED . $player->getName() . TextFormat::YELLOW . "OP d5l");
     } else {
   $event->setJoinMessage(TextFormat::GREEN . $player->getName() . TextFormat::YELLOW . "d5l");
   }
@@ -25,7 +25,7 @@ public function onJoin(PlayerJoinEvent $event){
 public function onQuit(PlayerQuitEvent $event){
  $player = $event->getPlayer();
    if($player->isOp()){
-     $event->setQuitMessage(TextFormat::RED . $player->getName() TextFormat::AQUA . "Op 6l3");
+     $event->setQuitMessage(TextFormat::RED . $player->getName() . TextFormat::AQUA . "Op 6l3");
   } else {
  $event->setQuitMessage(TextFormat::RED . $player->getName() . TextFormat::AQUA . "6l3");
   }
