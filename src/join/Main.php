@@ -4,8 +4,8 @@ namespace joinServer;
 
 use pocketmine\event\Listener;
 use pocketmine\plugin\PluginBase;
-use pocketmine\event\PlayerJoinEvent;
-use pocketmine\event\PlayerQuitEvent;
+use pocketmine\event\player\PlayerJoinEvent;
+use pocketmine\event\player\PlayerQuitEvent;
 use pocketmine\utils\TextFormat;
 
 class Main extends PluginBase implements Listener{
