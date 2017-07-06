@@ -14,7 +14,7 @@ public function onEnable(){
  $this->getServer()->getLogger()->info("joinServer has been enabled");
  $this->getServer()->getPluginManager()->registerEvents($this, $this);
  }
-public function onJoin(PlayerJoinEvent $event)
+public function onJoin(PlayerJoinEvent $event){
   $player = $event->getPlayer();
     if($player->isOp()){
       $event->setJoinMessage(TextFormat::RED . $player->getName() . TextFormat::YELLOW."OP d5l");
