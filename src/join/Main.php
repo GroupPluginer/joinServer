@@ -17,7 +17,7 @@ public function onEnable(){
 public function onJoin(PlayerJoinEvent $event){
   $player = $event->getPlayer();
     if($player->isOp()){
-      $event->setJoinMessage(TextFormat::RED . $player->getName() . TextFormat::GREEN . " OP d5l");
+      $event->setJoinMessage(TextFormat::RED . $player->getName() . TextFormat::GREEN . " الاوب دخل");
     } else {
   $event->setJoinMessage(TextFormat::GREEN . $player->getName() . TextFormat::RED . " d5l");
   }
